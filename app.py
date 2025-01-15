@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 load_dotenv()
 ## load the GROQ API Key
 #os.environ['GROQ_API_KEY']=os.getenv("GROQ_API_KEY")
-groq_api_key=st.secrets("GROQ_API_KEY")
+groq_api_key=st.secrets["GROQ_API_KEY"]
 
 #Prompt Template
 prompt=ChatPromptTemplate.from_messages(
